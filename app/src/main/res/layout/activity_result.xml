@@ -5,15 +5,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.sebastian.paginasamarillasapp_sebas.activity.ResultActivity">
+    tools:context="com.sebastian.paginasamarillasapp_sebas.activity.ResultActivity"
+    android:background="@drawable/customborder4">
 
     <EditText
         android:id="@+id/BusquedaEditText"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:text="busqueda" />
+        android:hint="Buscar"
+        android:drawableStart="@mipmap/ic_finder_orange"/>
 
 
     <android.support.v7.widget.RecyclerView

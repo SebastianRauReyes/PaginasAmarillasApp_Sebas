@@ -1,6 +1,7 @@
 package com.sebastian.paginasamarillasapp_sebas.model;
 
 public class Company {
+
     private String id;
     private String category;
     private String name;
@@ -10,6 +11,7 @@ public class Company {
     private String logo;
     private String info;
 
+    //-----------------------------------------------------------------------------------------------------------------------------------------
     public  Company(String id, String category, String name, String address, String phone, String email, String logo, String info) {
         this.id = id;
         this.category = category;
@@ -19,10 +21,9 @@ public class Company {
         this.email = email;
         this.logo = logo;
         this.info = info;
-
     }
 
-
+    //-----------------------------------------------------------------------------------------------------------------------------------------
     public String getId() {
         return id;
     }
@@ -30,7 +31,7 @@ public class Company {
     public void setId(String id) {
         this.id = id;
     }
-
+    //-----------------------------------------------------------------------------------------------------------------------------------------
     public String getCategory() {
         return category;
     }
@@ -38,7 +39,7 @@ public class Company {
     public void setCategory(String category) {
         this.category = category;
     }
-
+    //-----------------------------------------------------------------------------------------------------------------------------------------
     public String getName() {
         return name;
     }
@@ -46,7 +47,7 @@ public class Company {
     public void setName(String name) {
         this.name = name;
     }
-
+    //-----------------------------------------------------------------------------------------------------------------------------------------
     public String getAddress() {
         return address;
     }
@@ -54,7 +55,7 @@ public class Company {
     public void setAddress(String address) {
         this.address = address;
     }
-
+    //-----------------------------------------------------------------------------------------------------------------------------------------
     public String getPhone() {
         return phone;
     }
@@ -62,7 +63,7 @@ public class Company {
     public void setPhone(String phone) {
         this.phone = phone;
     }
-
+    //-----------------------------------------------------------------------------------------------------------------------------------------
     public String getEmail() {
         return email;
     }
@@ -70,7 +71,7 @@ public class Company {
     public void setEmail(String email) {
         this.email = email;
     }
-
+    //-----------------------------------------------------------------------------------------------------------------------------------------
     public String getLogo() {
         return logo;
     }
@@ -78,7 +79,7 @@ public class Company {
     public void setLogo(String logo) {
         this.logo = logo;
     }
-
+    //-----------------------------------------------------------------------------------------------------------------------------------------
     public String getInfo() {
         return info;
     }
@@ -86,4 +87,5 @@ public class Company {
     public void setInfo(String info) {
         this.info = info;
     }
+
 }
