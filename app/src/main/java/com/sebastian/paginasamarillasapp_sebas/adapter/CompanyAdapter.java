@@ -43,13 +43,13 @@ public class CompanyAdapter extends RecyclerView.Adapter<CompanyAdapter.ViewHold
             super(itemView);
 
             logo_text = itemView.findViewById(R.id.picture_image);
-            id_text = itemView.findViewById(R.id.id_text);
+
             name_text = itemView.findViewById(R.id.name_text);
             category_text = itemView.findViewById(R.id.category_text);
             address_text= itemView.findViewById(R.id.address_text);
             phone_text= itemView.findViewById(R.id.phone_text);
             email_text= itemView.findViewById(R.id.email_text);
-            info_text= itemView.findViewById(R.id.info_text);
+
 
 
         }    }
@@ -74,13 +74,13 @@ public class CompanyAdapter extends RecyclerView.Adapter<CompanyAdapter.ViewHold
 
         holder.logo_text.setImageResource(resId);
 
-        holder.id_text.setText(company.getId());
+        //holder.id_text.setText(company.getId());
         holder.name_text.setText(company.getName());
         holder.category_text.setText(company.getCategory());
         holder.address_text.setText(company.getAddress());
         holder.phone_text.setText(company.getPhone());
         holder.email_text.setText(company.getEmail());
-        holder.info_text.setText(company.getInfo());
+       // holder.info_text.setText(company.getInfo());
 
 
         holder.itemView.setOnClickListener(new View.OnClickListener() {
@@ -90,12 +90,10 @@ public class CompanyAdapter extends RecyclerView.Adapter<CompanyAdapter.ViewHold
 
                Intent intent = new Intent(holder.itemView.getContext(), DetailActivity.class);
 
-                intent.putExtra("category",company.getCategory());
+                intent.putExtra("address",company.getAddress());
                 intent.putExtra("name",company.getName());
                 intent.putExtra("phone",company.getPhone());
-
-
-
+                intent.putExtra("email",company.getEmail());
 
                 holder.itemView.getContext().startActivity(intent);
 

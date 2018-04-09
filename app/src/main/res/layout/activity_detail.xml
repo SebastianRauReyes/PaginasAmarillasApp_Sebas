@@ -8,9 +8,12 @@
     tools:context=".activity.DetailActivity"
     android:layout_margin="15dp">
 
+
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@color/primary_light"
         android:padding="16dp">
 
         <ImageView
@@ -35,37 +38,91 @@
                     android:textStyle="bold"
                     android:text="nombre"
                     android:layout_weight="1"/>
-
-
-
             </TableRow>
             <TableRow>
-
                 <TextView
-                    android:id="@+id/category_text"
+                    android:id="@+id/direction_text"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="categoty"
+                    android:text="address"
                     android:textSize="20sp"
-                    android:layout_weight="1"/>
-
-
+                    android:layout_weight="1"
+                    android:onClick="openBrowserApplication"/>
             </TableRow>
 
-
+        <TableRow>
             <TextView
                 android:id="@+id/phone_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="18sp"
-                android:text="phone" />
+                android:text="phone"
+                android:onClick="callNumber"/>
+        </TableRow>
 
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
 
+                <Button
+                    android:id="@+id/button3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/primary_dark"
+                    android:text="Web"
+                    android:onClick="openBrowserApplication"
+                    android:drawableTop="@mipmap/ic_web_black"
+                    android:layout_weight="1"/>
+                <Button
+                    android:id="@+id/button4"
+                    android:layout_toEndOf="@id/button3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/primary_dark"
+                    android:text="Call"
+                    android:onClick="callNumber"
+                    android:drawableTop="@mipmap/ic_phone_black"
+                    android:layout_weight="1"/>
+                <Button
+                    android:id="@+id/button5"
+                    android:layout_toEndOf="@id/button4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/primary_dark"
+                    android:text="SMS"
+                    android:onClick="smgNumber"
+                    android:drawableTop="@mipmap/ic_sms_black"
+                    android:layout_weight="1"/>
+                <Button
+                    android:id="@+id/button6"
+                    android:layout_toEndOf="@id/button5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/primary_dark"
+                    android:text="Email"
+                    android:onClick="sendEmail"
+                    android:drawableTop="@mipmap/ic_email_black"
+                    android:layout_weight="1"/>
+                <Button
+                    android:id="@+id/button7"
+                    android:layout_toEndOf="@id/button6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/primary_dark"
+                    android:text="Share"
+                    android:onClick="shareInfo"
+                    android:drawableTop="@mipmap/ic_share_black"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
 
 
 
 
         </TableLayout>
+
+
 
     </RelativeLayout>
 

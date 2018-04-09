@@ -11,7 +11,7 @@ public class CompanyRepository {
 
     static {
         companies.add( new Company("100", "Restaurant A","SuperA",
-                "Direccion 1", "1111111", "email1@gmail.com", "img_logo1", "Buen lugar"));
+                "https://www.google.com.pe/", "950286279", "email1@gmail.com", "img_logo1", "Buen lugar"));
 
         companies.add( new Company("200", "Restaurant B","SuperB",
                 "Direccion 2", "2222222", "email2@gmail.com", "img_logo1", "Buen lugar"));
